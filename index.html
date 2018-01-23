@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+
+<div id="root">
+  <p>{{ message }}</p>
+  
+<button :title="title">Hover Over me</button>
+
+</div>  
+
+<script>
+var app = new Vue({
+	el: '#root',
+  
+	data: {
+  	message: 'Hola Mundo',
+  	title: 'Now the title is this'
+  }
+});
+</script>
+</body>
+
+</html>
